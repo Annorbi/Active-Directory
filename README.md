@@ -27,7 +27,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Joining a Client-PC to the domain
 - Experimenting with user account settings
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Setting up Active Directory</h2>
 
 <p>
 </p>
@@ -53,7 +53,7 @@ Make sure both your windows PC and server pc are turned on and active. On the az
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, go trought the same thing for the Client PC but instead of changing the allocation, you'll change the ip address to that of the server pc's private IP. 
+Next, go through the same thing for the Client PC but instead of changing the allocation, you'll change the ip address to that of the server pc's private IP. 
 </p>
 <br />
 
@@ -62,5 +62,24 @@ Next, go trought the same thing for the Client PC but instead of changing the al
 </p>
 <p>
 From the windows PC, ping the server PC's private address to make sure things work. You should be able to do this as both PC should be "connected".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+ipconfig /all and make sure that the [dns settings] are the private ip adress of the DC1
+</p>
+<br />
+
+<h2>Deploying Active Directory</h2>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+On the windows server, install active directory;
+  
 </p>
 <br />
