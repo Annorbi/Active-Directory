@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/040a8224-0cb8-49e7-9b0a-9305649decde)<p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
@@ -93,7 +92,7 @@ Once you have the domain services installed, it is time to configure it by promo
 
 
 <p>
-<img src="https://i.imgur.com/14pmlnG.png" height="60%" width="60%" 
+<img src="https://i.imgur.com/sKetQDA.png" height="60%" width="60%" 
 </p>
 <p>
 Once you log back in, make sure to log in as a domain user by typing "[domain name here]\username" and input your password as usual. So in this case here it would look like this: mydomain.com\labuser
@@ -101,10 +100,12 @@ Once you log back in, make sure to log in as a domain user by typing "[domain na
 <br />
 
 <p>
-<img src="https://i.imgur.com/14pmlnG.png" height="60%" width="60%" 
+<img src="https://i.imgur.com/kUUt5Zi.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/joebe15.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/pFM23XA.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/WbUFdRd.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/KMAj5jT.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/TYjm8Hd.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/QSMoBTX.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/3ucqEXg.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/GgYdzCJ.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/nJMoaaU.png" height="30%" width="30%" 
 </p>
 <p>
-Next, we need to test out the domain by creating both OUs (Organiasational Units) as well as users. To create an Ou, simply find "tools", "Active Directory Users and Computers" → [domain name] (right click it) → new → Organizational Unit. For this example, we will be creating the Admin, Employees, and Clients OUs. We are using the 
-user to test out the domain. To do so, find "Server manager" → "Tools" → "Active Directory Users and Computers"  
+Next, we need to test out the domain by creating both OUs (Organiasational Units) as well as users. To create an Ou, simply find "tools", "Active Directory Users and Computers" → [domain name] (right click it) → new → Organizational Unit. For this example, we will be creating the Admin, Employees, and Clients OUs. We are using the the "_" to help us easily find our newly created groups. To do so, [domain name] (right click) → new → user. Give this user <i>"domain admin"</i> rights. This is not to be confused for regular <i>"admin"</i>; the two are not the same. Lastly, go to the "builtin" and "remote dekstop users", add the user you just created in "member of". Once you are done with all of that, try to log in using your newly created admin. We will be using this account from now on.
 </p>
 <br />
+
+
+<h2>Joining the Client pc to the domain</h2>
