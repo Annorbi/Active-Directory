@@ -146,6 +146,60 @@ Add in the admin account and password you created over in the previous step. For
 <img src="https://i.imgur.com/D3ttMF5.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/2jdBOyw.png" height="40%" width="40%"
 </p>
 <p>
-Make sure the info's good and then press "next" a couple of times. Your vm will be restarted to join the domain, that's all good. Wait for it to be done and once it is, log back in. You can verify that you are in fact registered to the domain by going 
+Make sure the info's good and then press "next" a couple of times. Your vm will be restarted to join the domain, that's all good. Wait for it to be done and once it is, log back in. You can verify that you are in fact registered to the domain by once again right clicking on "my pc" and finding "system propreties".
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
+</p>
+<p>
+Once everything is all setup, go back to the server and find the "Computers" tab in active directory. You should now be able to see the windows PC. Go ahead and drag and drop it over to the "_CLIENTS" OU we created a while ago. Once you are done with that, we can move on to the next stage.
+</p>
+<br />
+
+<h2>Spoofing employees</h2>
+
+<p>
+<img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
+</p>
+<p>
+Now, we will create a script that will generate a bunch of fake employees for testing purposes. Switch back to DC1 (windows server pc) and open powershell ISE as an administrator.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
+</p>
+<p>
+Paste the provided script <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1"> <br /> to generate as many users as desired (maybe stick to 100 or less).
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
+</p>
+<p>
+Once everything is all setup, go back to the server and find the "Computers" tab in active directory. You should now be able to see the windows PC. Go ahead and drag and drop it over to the "_CLIENTS" OU we created a while ago. Once you are done with that, we can move on to the next stage.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
+</p>
+<p>
+Once everything is all setup, go back to the server and find the "Computers" tab in active directory. You should now be able to see the windows PC. Go ahead and drag and drop it over to the "_CLIENTS" OU we created a while ago. Once you are done with that, we can move on to the next stage.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
+</p>
+<p>
+Once everything is all setup, go back to the server and find the "Computers" tab in active directory. You should now be able to see the windows PC. Go ahead and drag and drop it over to the "_CLIENTS" OU we created a while ago. Once you are done with that, we can move on to the next stage.
+</p>
+<br />
+
+<h2>Practicing handling user account settings</h2>
+
+GPMC.MSC → Group Policy Managment → Forest → Domains → Default domain Policy
