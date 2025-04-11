@@ -103,9 +103,49 @@ Once you log back in, make sure to log in as a domain user by typing "[domain na
 <img src="https://i.imgur.com/kUUt5Zi.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/joebe15.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/pFM23XA.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/WbUFdRd.png" height="30%" width="30%" <p> <img src="https://i.imgur.com/KMAj5jT.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/TYjm8Hd.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/QSMoBTX.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/3ucqEXg.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/GgYdzCJ.png" height="30%" width="30%"  <p> <img src="https://i.imgur.com/nJMoaaU.png" height="30%" width="30%" 
 </p>
 <p>
-Next, we need to test out the domain by creating both OUs (Organiasational Units) as well as users. To create an Ou, simply find "tools", "Active Directory Users and Computers" → [domain name] (right click it) → new → Organizational Unit. For this example, we will be creating the Admin, Employees, and Clients OUs. We are using the the "_" to help us easily find our newly created groups. To do so, [domain name] (right click) → new → user. Give this user <i>"domain admin"</i> rights. This is not to be confused for regular <i>"admin"</i>; the two are not the same. Lastly, go to the "builtin" and "remote dekstop users", add the user you just created in "member of". Once you are done with all of that, try to log in using your newly created admin. We will be using this account from now on.
+Next, we need to test out the domain by creating both OUs (Organiasational Units) as well as users. To create an Ou, simply find "tools", "Active Directory Users and Computers" → [domain name] (right click it) → new → Organizational Unit. For this example, we will be creating the Admin, Employees, and Clients OUs. We are using the the "_" to help us easily find our newly created groups. To do so, [domain name] (right click) → new → user. Give this user <i>"domain admin"</i> rights. This is not to be confused for regular <i>"admin"</i>; the two are not the same. Lastly, go to the "builtin" and "remote dekstop users", add the user you just created in "member of". Once you are done with all of that, try to log in using your newly created admin. We will be using this account from now on. Make sure to set the password to "never expire" and take note of it, you'll need it later.
 </p>
 <br />
 
 
 <h2>Joining the Client pc to the domain</h2>
+
+
+<p>
+</p>
+<p>
+Make sure your VM was restarted and then get ready to join your client pc (windows PC) to the newly created domain.
+</p>
+<p>
+<img src="https://i.imgur.com/8djCy2i.png" height="40%" width="40%" <p> <img src="https://i.imgur.com/ZQ2uveK.png" height="40%" width="40%"
+</p>
+<p>
+Make sure to right-click and hit "propreties" 
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/HqIT6ey.png" height="60%" width="60%" 
+</p>
+<p>
+Find "advance system settings" and then locate the <i>network id</i>.
+</p>
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/nTo8HMg.png" height="60%" width="60%" 
+</p>
+<p>
+Add in the admin account and password you created over in the previous step. For this example, it'll be "Jane Doe". For the domain name, you'll need to enter the domain name you created earlier. In this example, we used "mydomain.com". Once done, hit "next".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/D3ttMF5.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/2jdBOyw.png" height="40%" width="40%"
+</p>
+<p>
+Make sure the info's good and then press "next" a couple of times. Your vm will be restarted to join the domain, that's all good. Wait for it to be done and once it is, log back in. You can verify that you are in fact registered to the domain by going 
+</p>
+<br />
