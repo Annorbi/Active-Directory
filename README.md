@@ -151,6 +151,13 @@ Make sure the info's good and then press "next" a couple of times. Your vm will 
 <br />
 
 <p>
+<img src="https://i.imgur.com/J654ATf.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QSTQj5W.png" height="40%" width="40%" <p> <img src="https://i.imgur.com/SFF6jGH.png" height="40%" width="40%"
+</p>
+<p>
+Next, make sure to allow "domain users" to login to this PC; this will be required for the next step.
+</p>
+
+<p>
 <img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
 </p>
 <p>
@@ -188,7 +195,7 @@ Once everything is all setup, go back to the server and find the "Computers" tab
 <img src="https://i.imgur.com/0OxAnHb.png" height="40%" width="40%"  <p> <img src="https://i.imgur.com/QjIYKrx.png" height="40%" width="40%"
 </p>
 <p>
-Once everything is all setup, go back to the server and find the "Computers" tab in active directory. You should now be able to see the windows PC. Go ahead and drag and drop it over to the "_CLIENTS" OU we created a while ago. Once you are done with that, we can move on to the next stage.
+Observe the newly created users under the “_EMPLOYEES” OU. Choose a random employee name and login as them from the client PC. Before you do this though, make sure to allow them to remote connect. The username will be their "name". The default password will be "Password1". For example, we will try to login as "cumu.fin". So, we would enter "mydomain.com\cumu.fin" as the username and "Password1" for the password.
 </p>
 <br />
 
@@ -201,5 +208,31 @@ Once everything is all setup, go back to the server and find the "Computers" tab
 <br />
 
 <h2>Practicing handling user account settings</h2>
+
+
+Dealing with Account Lockouts
+Get logged into dc-1
+Pick a random user account you created previously
+Attempt to log in with it 10 times with a bad password
+
+Configure Group Policy to Lockout the account after 5 attempts:
+How To Configure Account Lockout Threshold in Group Policy
+
+Attempt to log in with it 6 times with a bad password
+
+Observe that the account has been locked out within Active Directory
+Unlock the account
+Reset the password
+Attempt to login with it
+
+Enabling and Disabling Accounts
+Disable the same account in Active Directory
+Attempt to login with it, observe the error message
+Re-enable the account and attempt to login with it.
+
+Observing Logs
+Observe the logs in the Domain Controller
+Observe the logs on the client Machine
+Precursor to cybersecurity and security operations: joshmadakor.tech/cyber
 
 GPMC.MSC → Group Policy Managment → Forest → Domains → Default domain Policy
