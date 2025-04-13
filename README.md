@@ -50,6 +50,7 @@ Make sure both your windows PC and server pc are turned on and active. On the az
 
 <p>
 <img src="https://i.imgur.com/szk2PsH.png" height="60%" width="60%"
+</p>
 <p>
 Next, go through the same thing for the Client PC but instead of changing the allocation, you'll change the ip address to that of the windows server pc's private IP in the dns settings.
 </p>
