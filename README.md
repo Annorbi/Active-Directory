@@ -211,10 +211,10 @@ Once everything is all setup, go back to the server and find the "Computers" tab
 <h2>Practicing handling user account settings</h2>
 
 
-Dealing with Account Lockouts
-Get logged into dc-1
-Pick a random user account you created previously
-Attempt to log in with it 10 times with a bad password
+<b>Dealing with Account Lockouts</b>
+Log back to the domain controller (windows server VM)
+Pick a random user account you created previously (can be different from the one used earlier)
+Attempt to log in with it 10 times with a bad password; notice the error message.
 
 Configure Group Policy to Lockout the account after 5 attempts:
 How To Configure Account Lockout Threshold in Group Policy
